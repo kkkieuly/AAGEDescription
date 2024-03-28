@@ -16,14 +16,7 @@ public class UDPReceive : MonoBehaviour
 
     // udpclient object
     UdpClient client;
-
     public GameObject description;
-    public InputField input;
-    public Button btn;
-
-    UDPSendMail sendMail = new UDPSendMail();
-
-    private string email;
 
     // public
     // public string IP = "127.0.0.1"; default local
@@ -55,10 +48,6 @@ public class UDPReceive : MonoBehaviour
     {
 
         init();
-        //showInput();
-        input.gameObject.SetActive(false);
-        btn.gameObject.SetActive(false);
-
     }
 
     // OnGUI
@@ -103,13 +92,9 @@ public class UDPReceive : MonoBehaviour
 
     }
 
-
-
-    public void Update()
-    {
-        ReceiveData();
   
-    }
+
+
     // receive thread
     private void ReceiveData()
     {
@@ -133,16 +118,12 @@ public class UDPReceive : MonoBehaviour
                 // Den abgerufenen Text anzeigen.
                 //print(">> " + text);
 
-                printText(text);
+                //printText(text);
 
 
                 // latest UDPpacket
                 lastReceivedUDPPacket = text;
 
-                //if (lastReceivedUDPPacket == "mail")
-                //{
-                //    showInput();
-                //}
 
 
                 // ....
@@ -160,9 +141,8 @@ public class UDPReceive : MonoBehaviour
 
         }
 
+
     }
-
-
 
     // getLatestUDPPacket
     // cleans up the rest
@@ -178,36 +158,9 @@ public class UDPReceive : MonoBehaviour
 
         client.Close();
     }
-
     public void printText(string text)
     {
         description.GetComponent<Text>().text = text;
     }
-
-    public void showInput()
-    {
-        
-        printText("Hier mail bittw");
-        input.gameObject.SetActive(true);
-        btn.gameObject.SetActive(true);
-
-        //input.touchScreenKeyboard.active = true;
-
-        TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);   
-       
-    }
-
-    //public void mail()
-    //{   
-       
-    //    sendMail.Start();
-
-    //    string email = input.text;
-
-    //    sendMail.sendString("email bekommen");
-    //    sendMail.sendString(email);
-
-
-    //}
 }
    

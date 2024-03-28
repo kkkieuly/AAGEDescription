@@ -1,9 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DescSend
     - UDPReceive
-    - UDPSendMail
-    - start
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -17,11 +16,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -48,33 +45,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1466}
+      Script: {instanceID: 1470}
     - Class: 114
-      Script: {instanceID: 1468}
+      Script: {instanceID: 1472}
     - Class: 114
-      Script: {instanceID: 1724}
+      Script: {instanceID: 1894}
     - Class: 114
-      Script: {instanceID: 1856}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 1982}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2268}
+      Script: {instanceID: 2440}
     - Class: 114
-      Script: {instanceID: 2380}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2522}
+      Script: {instanceID: 3736}
     - Class: 114
-      Script: {instanceID: 2564}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 4090}
     - Class: 114
-      Script: {instanceID: 3566}
-    - Class: 114
-      Script: {instanceID: 3672}
-    - Class: 114
-      Script: {instanceID: 3702}
-    - Class: 114
-      Script: {instanceID: 3920}
+      Script: {instanceID: 18964}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -196,7 +187,7 @@ ScriptsOnlyBuild:
     className: TMP_DigitValidator
   - hash:
       serializedVersion: 2
-      Hash: da2045096b4c5a397108e0a03599c34c
+      Hash: d747d59877ad70b777d8354163fecb43
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UDPReceive
@@ -746,7 +737,13 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 782b5299e48961359eb11c836cd2b9a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DescSend
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/kieuly/Dokumente/Git/TextDisplay/TextDisplay/AndroidBuild.apk
+  playerPath: C:/Projekte/AAGEDescription/AndroidBuild.apk
